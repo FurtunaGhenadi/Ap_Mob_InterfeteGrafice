@@ -1,0 +1,2 @@
+rootProject.name = "Interfete_Grafice"
+include ':app'

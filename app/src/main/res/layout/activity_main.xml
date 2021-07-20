@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8831D"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textCountId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:layout_gravity="end"
+        android:padding="@dimen/padding_medium"
+        android:layout_margin="@dimen/padding_small"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rBtnUpId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rBtnUpLabel"
+            android:checked="true"
+
+
+        />
+
+        <RadioButton
+            android:id="@+id/rBtnDownId"
+            android:text="@string/rBtnDownLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+        />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCountId"
+        android:text="@string/rBtnCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnCountOnClikHandler"
+    />
+</LinearLayout>
